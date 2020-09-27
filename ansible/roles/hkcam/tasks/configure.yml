@@ -29,7 +29,7 @@
       # Modify this file with the settings you want to have
 
       # PIN used while pairing the device
-      export HKCAM_HOMEKIT_PIN=00102003
+      export HKCAM_HOMEKIT_PIN=12345678
 
       # Force a minimum bitrate on all streams.
       # NOTE: specifying a high bit rate may cause some devices, such as the Apple Watch, to not function correctly
@@ -39,7 +39,7 @@
       export HKCAM_ROTATION=0
 
       # Enable multiple clients to watch the stream simultaneously
-      export HKCAM_MULTI_STREAM=false
+      export HKCAM_MULTI_STREAM=true
 
 # - name: Add bcm2835 module
 #   modprobe:

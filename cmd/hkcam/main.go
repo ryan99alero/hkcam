@@ -44,7 +44,7 @@ func main() {
 	var multiStream *bool = flag.Bool("multi_stream", false, "Allow mutliple clients to view the stream simultaneously")
 	var dataDir *string = flag.String("data_dir", "Camera", "Path to data directory")
 	var verbose *bool = flag.Bool("verbose", true, "Verbose logging")
-	var pin *string = flag.String("pin", "00102003", "PIN for HomeKit pairing")
+	var pin *string = flag.String("pin", "12345678", "PIN for HomeKit pairing")
 
 	flag.Parse()
 
@@ -53,7 +53,7 @@ func main() {
 		ffmpeg.EnableVerboseLogging()
 	}
 
-	switchInfo := accessory.Info{Name: "Camera", FirmwareRevision: "0.0.9", Manufacturer: "Matthias Hochgatterer"}
+	switchInfo := accessory.Info{Name: "Camera", FirmwareRevision: "0.0.9", Manufacturer: "Goff Enterprise"}
 	cam := accessory.NewCamera(switchInfo)
 
 	cfg := ffmpeg.Config{
